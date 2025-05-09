@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Portal</title>
+  
+  <!-- jQuery Mobile CSS CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+  <!-- jQuery and jQuery Mobile JS CDN -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    h2, h3 {
+      color: #2c3e50;
+    }
+    .custom-btn {
+      background-color: #3498db !important;
+      color: white !important;
+      font-weight: bold;
+    }
+    .ui-content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div data-role="page" id="home">
+    <div data-role="header" data-theme="b">
+      <h1>Student Portal</h1>
+    </div>
+
+    <div data-role="content">
+      <h3>Welcome to the Portal</h3>
+      <a href="#profile" class="ui-btn custom-btn">Go to Profile</a>
+    </div>
+  </div>
+
+  <!-- Profile Page -->
+  <div data-role="page" id="profile">
+    <div data-role="header" data-theme="b">
+      <h1>Profile</h1>
+    </div>
+
+    <div data-role="content">
+      <h3>Student Details</h3>
+      <p><strong>Name:</strong> John Doe</p>
+      <p><strong>Roll No:</strong> 12345</p>
+      <p><strong>Course:</strong> Computer Engineering</p>
+      
+      <a href="#attendance" class="ui-btn custom-btn">Go to Attendance</a>
+    </div>
+  </div>
+
+  <!-- Attendance Page -->
+  <div data-role="page" id="attendance">
+    <div data-role="header" data-theme="b">
+      <h1>Attendance</h1>
+    </div>
+
+    <div data-role="content">
+      <h3>Attendance Record</h3>
+      <ul data-role="listview" data-inset="true">
+        <li>Math: 90%</li>
+        <li>Physics: 85%</li>
+        <li>Computer Science: 95%</li>
+      </ul>
+      <a href="#contact" class="ui-btn custom-btn">Contact Admin</a>
+    </div>
+  </div>
+
+  <!-- Contact Page -->
+  <div data-role="page" id="contact">
+    <div data-role="header" data-theme="b">
+      <h1>Contact</h1>
+    </div>
+
+    <div data-role="content">
+      <h3>Admin Contact</h3>
+      <p>Email: admin@college.edu</p>
+      <p>Phone: +91 9876543210</p>
+      <a href="#home" class="ui-btn">Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>

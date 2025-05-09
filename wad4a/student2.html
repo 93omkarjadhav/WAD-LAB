@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Info App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CDNs -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Welcome Student</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#marks">Marks</a></li>
+            </ul>
+        </div>
+        <div data-role="content">
+            <h2>Hello Student!</h2>
+            <p>This is your personal info app.</p>
+        </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div data-role="page" id="profile">
+        <div data-role="header">
+            <h1>Profile</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <li><strong>Name:</strong> Rahul Sharma</li>
+                <li><strong>Roll No:</strong> 21IT045</li>
+                <li><strong>Course:</strong> B.E. IT</li>
+                <li><strong>Year:</strong> 3rd Year</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Attendance Page -->
+    <div data-role="page" id="attendance">
+        <div data-role="header">
+            <h1>Attendance</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <li>Computer Networks: 85%</li>
+                <li>DBMS: 90%</li>
+                <li>Web Tech: 88%</li>
+                <li>Maths: 92%</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Marks Page -->
+    <div data-role="page" id="marks">
+        <div data-role="header">
+            <h1>Marks</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <li>Mid-Sem: 42/50</li>
+                <li>End-Sem: 78/100</li>
+                <li>Assignments: 19/20</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User List</title>
+</head>
+<body>
+  <h2>Registered Users</h2>
+  <ul id="userList"></ul>
+  <a href="index.html">Back to Registration</a>
+
+  <script>
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const userList = document.getElementById('userList');
+
+    users.forEach(user => {
+      const li = document.createElement('li');
+      li.textContent = `Name: ${user.name}, Email: ${user.email}`;
+      userList.appendChild(li);
+    });
+  </script>
+</body>
+</html>
